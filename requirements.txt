@@ -1,0 +1,6 @@
+rembg
+Pillow
+numba
+numpy
+flask
+vercel

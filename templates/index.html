@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <header style="margin-bottom: 20px;">
+        <h1>Background Remover Tool</h1>
+        <p style="text-align: justify;">This is an open-source project with the help of another open source project <b>rembg</b></p>
+    </header>
+
+    <div id="sidebar">
+        <h2>Upload and save image</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".png, .jpg, .jpeg">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+{% endblock %}
