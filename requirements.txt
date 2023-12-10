@@ -3,4 +3,3 @@ Pillow
 numba
 numpy
 flask
-vercel

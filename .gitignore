@@ -1,3 +1,2 @@
-venv/
+env/
 .python-version
-.vercel
