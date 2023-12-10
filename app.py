@@ -34,5 +34,8 @@ def upload():
                              download_name="object-img.png",
                              mimetype="image/png")
 
+def handler(event, context):
+    return app.run(port=int(os.environ.get("PORT", 5000)))
+
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000)
