@@ -3,3 +3,4 @@ Pillow
 numba
 numpy
 flask
+gunicorn
