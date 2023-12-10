@@ -1,7 +1,3 @@
-Certainly! Below is an extended version of the README file with GitHub-flavored markdown for better styling:
-
----
-
 # Image Background Remover Tool
 
 This is a simple web application built with Flask that allows users to remove the background from an image using the `rembg` library.
@@ -54,7 +50,7 @@ This file lists the required Python packages for the project.
   - vercel: Dependency for deployment on Vercel (remove if not needed).
 
 ## How to Run:
-
-1. Install dependencies using `pip install -r requirements.txt`.
-2. Run the Flask application using `python app.py`.
-3. Open your browser and navigate to `http://localhost:8080` to use the Image Background Remover Tool.
+1. Create Virtual Environment using Virtualenv
+2. Install dependencies using `pip install -r requirements.txt`.
+3. Run the Flask application using `python app.py`.
+4. Open your browser and navigate to `http://localhost:8080` to use the Image Background Remover Tool.
