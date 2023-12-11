@@ -1,7 +1,4 @@
 rembg
 Pillow
-numba
-numpy
 flask
 gunicorn
-vercel

@@ -44,10 +44,7 @@ This file lists the required Python packages for the project.
 - **Dependencies:**
   - rembg: Library for removing image backgrounds.
   - Pillow: Python Imaging Library fork, used for image processing.
-  - numba: Just-In-Time (JIT) compiler for Python.
-  - numpy: Library for numerical operations in Python.
   - Flask: Web framework for Python.
-  - vercel: Dependency for deployment on Vercel (remove if not needed).
 
 ## How to Run:
 1. Create Virtual Environment using Virtualenv
