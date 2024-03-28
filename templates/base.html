@@ -3,40 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Image Background Remover{% endblock %}</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #4a90e2, #1b0417, #f67c41);
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            perspective: 1000px;
-        }
-        .container {
-            position: relative;
-            transform-style: preserve-3d;
-            transform: translateZ(-30px);
-            background-color: #e4e8ff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 80%;
-            max-width: 600px;
-            text-align: center;
-            overflow: hidden;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>{% block title %}EraseMaster{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="navbar">
+        <h1>EraseMaster</h1>
+    </div>
     <div class="container">
         {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 EraseMaster</p>
     </div>
 </body>
 </html>

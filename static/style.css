@@ -1,0 +1,71 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4a90e2, #1b0417, #f67c41); /* Light linear gradient */
+    color: #000; /* Black text color */
+    min-height: 100vh; /* Ensure body fills the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Footer to bottom */
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #4a90e2, #1b0417, #f67c41); /* Light linear gradient */
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #f2f3f4;
+}
+
+/* Footer styles */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #4a90e2, #1b0417, #f67c41); /* Light linear gradient */
+}
+
+.footer p {
+    margin: 0;
+    color: #f2f3f4;
+}
+
+/* Container styles */
+.container {
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: #b2beb5; /* Light grey background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Improved box shadow */
+    margin: auto; /* Center container horizontally */
+    max-width: 600px; /* Limit container width for responsiveness */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #4a90e2; /* Blue background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #357ae8; /* Darker shade of blue on hover */
+}

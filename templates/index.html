@@ -2,15 +2,24 @@
 
 {% block content %}
     <header style="margin-bottom: 20px;">
-        <h1>Background Remover Tool</h1>
         <p style="text-align: justify;">This is an open-source project with the help of another open source project <b>rembg</b></p>
     </header>
 
     <div id="sidebar">
         <h2>Upload and save image</h2>
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" accept=".png, .jpg, .jpeg">
-            <input type="submit" value="Upload">
+        <br>
+        <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+            <input class="button" type="file" name="file" accept=".png, .jpg, .jpeg">
+            <input class="button" type="submit" value="Upload">
         </form>
     </div>
+    <br>
+    {% if converted_image %}
+    <div class="container">
+        <h2>Converted Image</h2>
+        <img src="data:image/png;base64,{{ converted_image }}" style="max-width: 100%; height: auto;">
+        <br>
+        <a href="data:image/png;base64,{{ converted_image }}" download="converted_image.png"><button class="button">Download Image</button></a>
+    </div>
+    {% endif %}
 {% endblock %}
